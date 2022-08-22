@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-pet-list-edit></app-pet-list-edit>>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let pet of pets; let i = index"
+        (click)="onEditItem(i)"
+      >
+      {{ pet.name }} {{ pet.tutor }} {{ pet.raca }} ({{ pet.age }})
+
+      </a>
+    </ul>
+  </div>
+</div>
