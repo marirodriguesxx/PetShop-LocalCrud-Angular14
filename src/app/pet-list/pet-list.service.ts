@@ -8,7 +8,9 @@ export class PetListService {
   
   private pets: Pet[] = [
     new Pet('Qiyana','Mariana','Pinscher', 1.4),
-    new Pet('Diana','Leo','SRD', 0.9)
+    new Pet('Diana','Leo','SRD', 0.9),
+    new Pet('Tifani','Pedro','Cocker', 15),
+    new Pet('Prey','Alexandre','Pinscher', 6)
   ];
 
   getPets() {

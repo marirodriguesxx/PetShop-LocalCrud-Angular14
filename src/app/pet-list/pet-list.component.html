@@ -1,6 +1,31 @@
-<div class="row">
+<div class="row justify-content-center">
+   <app-pet-list-edit></app-pet-list-edit>>
+  <div class="col-auto">
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Tutor</th>
+          <th scope="col">Raça</th>
+          <th scope="col">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let pet of pets; let i = index" >
+              <td>{{pet.name}}</td>
+              <td>{{pet.tutor}}</td>
+              <td>{{pet.raca}}</td>
+              <td>{{pet.age}}</td>
+              <button type="button" class="btn btn-info" (click)="onEditItem(i)" >edit</button>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- <div class="row">
   <div class="col-xs-10">
-    <app-pet-list-edit></app-pet-list-edit>>
+   
     <hr>
     <ul class="list-group">
       <a
@@ -14,4 +39,4 @@
       </a>
     </ul>
   </div>
-</div>
+</div> -->
